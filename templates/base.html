@@ -61,8 +61,8 @@
 			          <li><a href="{% url 'base:about' %}">About</a></li>
 			          <li class="menu-has-children"><a href="">Blog</a>
 			            <ul>
-			              <li><a href="{% static 'blog_page/blog-home.html' %}">Blog Home</a></li>
-			              <li><a href="{% static 'blog_page/blog-single.html' %}">Blog Single</a></li>
+			              <li><a href="{% url 'blog:blog' %}">Blog Home</a></li>
+			              <li><a href="{% url 'blog:blog_single' %}">Blog Single</a></li>
 			            </ul>
 			          </li>	
 			          <li class="menu-has-children"><a href="">Pages</a>

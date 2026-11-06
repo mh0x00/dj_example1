@@ -9,5 +9,3 @@ def about_view(reqest):
 
 def contact_veiw(reqest):
     return render(reqest, 'site_page/contact.html')
-
-
