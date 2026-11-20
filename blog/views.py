@@ -9,13 +9,13 @@ def blog_veiw(req):
     return render(req, 'blog_page/blog_home.html', context)
 
 
-def blog_single_veiw(req, pid):
+def blog_single_view(req, pid):
     posts = Post.objects.filter(status=1)
     post = get_object_or_404(posts, pk=pid)
     context = {'post': post}
     return render(req, 'blog_page/blog_single.html', context)
 
-    # posts=Post.objects.filter(status=1)
-    # post=get_object_or_404(posts,pk=pid) secure one
-    # post=get_object_or_404(Post,pk=pid,status=1) secure two
-    # post=get_object_or_404(Post,pk=pid) dont secure
+
+
+def test_view(req):
+    return render(req,'test.html')
