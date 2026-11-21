@@ -1,0 +1,9 @@
+{% load static %}
+{% for name,count in categor.items %}
+<li>
+    <a href="{% url "blog:category" cat_name=name %}" class="d-flex justify-content-between">
+        <p>{{name}}</p>
+		<p>{{count}}</p>
+	</a>
+</li>
+{% endfor %}
